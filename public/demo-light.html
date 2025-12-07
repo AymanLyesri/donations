@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Widget Demo - Light Theme</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #f9fafb;
+      color: #111827;
+    }
+    
+    h1 {
+      color: #111827;
+      margin-bottom: 20px;
+    }
+    
+    .demo-section {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    
+    button {
+      background: #3b82f6;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    
+    button:hover {
+      background: #2563eb;
+    }
+    
+    code {
+      background: #f3f4f6;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    
+    pre {
+      background: #1f2937;
+      color: #f9fafb;
+      padding: 20px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-section">
+    <h1>Donation Widget Demo - Light Theme</h1>
+    <p>This page demonstrates the donation widget in a light-themed environment.</p>
+    <p>The floating button appears in the bottom-right corner. Click it to open the donation modal.</p>
+  </div>
+
+  <div class="demo-section">
+    <h2>API Methods</h2>
+    <p>You can also trigger the widget programmatically:</p>
+    
+    <button onclick="DonationWidget.open()">Open Modal</button>
+    <button onclick="DonationWidget.close()">Close Modal</button>
+    <button onclick="DonationWidget.setTheme('dark')">Set Dark Theme</button>
+    <button onclick="DonationWidget.setTheme('light')">Set Light Theme</button>
+  </div>
+
+  <div class="demo-section">
+    <h2>Embed Code</h2>
+    <p>Add this to your website:</p>
+    <pre><code>&lt;script src="http://localhost:3000/widget.js"&gt;&lt;/script&gt;</code></pre>
+  </div>
+
+  <div class="demo-section">
+    <h2>Features</h2>
+    <ul>
+      <li>✅ Auto-detects theme (light/dark)</li>
+      <li>✅ Shadow DOM (no style conflicts)</li>
+      <li>✅ Crypto wallet support</li>
+      <li>✅ PayPal integration</li>
+      <li>✅ Ko-fi integration</li>
+      <li>✅ Responsive design</li>
+    </ul>
+  </div>
+
+  <!-- Widget Script -->
+  <script src="http://localhost:3000/widget.js"></script>
+</body>
+</html>
